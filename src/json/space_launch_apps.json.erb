@@ -1,0 +1,52 @@
+{
+    "title": "Spacebar Launch apps",
+    "rules": [
+        {
+            "description": "Launch apps by spacebar+letters.",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("a", ["right_command"], ["caps_lock"]) %>,
+                    "to": [ { "shell_command": "open '/Applications/Utilities/Activity Monitor.app'" }
+                    ],
+                    "to_if_alone": <%= to([["spacebar"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("d", ["right_command"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/Dictionary.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("u", ["right_command"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/Unity/Unity.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("f", ["right_command"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open ~" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("b", ["right_command"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/Firefox.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("t", ["right_command"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/iTerm.app'" }
+                    ]
+                }
+            ]
+        }
+    ]
+}
