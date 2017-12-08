@@ -6,6 +6,14 @@
             "manipulators": [
                 {
                     "type": "basic",
+                    "from": <%= from("fn", [], ["any"]) %>,
+                    "to": <%= to([["fn"]]) %>,
+                    "to_if_alone": [
+                        { "shell_command": "open '/Applications/iTerm.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
                     "from": <%= from("a", ["right_command"], ["caps_lock"]) %>,
                     "to": [ { "shell_command": "open '/Applications/Utilities/Activity Monitor.app'" }
                     ],
@@ -16,6 +24,13 @@
                     "from": <%= from("d", ["right_command"], ["caps_lock"]) %>,
                     "to": [
                         { "shell_command": "open '/Applications/Dictionary.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("m", ["right_command"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/Maps.app'" }
                     ]
                 },
                 {
