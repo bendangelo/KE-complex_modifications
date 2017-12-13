@@ -1,8 +1,8 @@
 {
-  "title": "Spacebar Launch apps",
+  "title": "Right Command Launch apps",
   "rules": [
     {
-      "description": "Launch apps by spacebar+letters.",
+      "description": "Launch apps by r_command+letters.",
       "manipulators": [
         {
           "type": "basic",
@@ -41,11 +41,6 @@
           "to": [
             {
               "shell_command": "open '/Applications/Utilities/Activity Monitor.app'"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "spacebar"
             }
           ]
         },
