@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "title": "Right Command Launch apps",
+=======
+  "title": "Right command Launch apps",
+>>>>>>> Open alacritty with alt spacebar
   "rules": [
     {
       "description": "Launch apps by r_command+letters.",
@@ -21,7 +25,7 @@
           ],
           "to_if_alone": [
             {
-              "shell_command": "open '/Applications/iTerm.app'"
+              "shell_command": "open '/Applications/Alacritty.app'"
             }
           ]
         },
@@ -138,23 +142,30 @@
               "shell_command": "open '/Applications/Firefox.app'"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "description": "Alt + spacebar open Alacritty",
+      "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "t",
+            "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
-                "right_command"
+                "left_option"
               ],
               "optional": [
+                "left_shift",
+                "right_shift",
                 "caps_lock"
               ]
             }
           },
           "to": [
             {
-              "shell_command": "open '/Applications/iTerm.app'"
+              "shell_command": "open '/Applications/Alacritty.app'"
             }
           ]
         }

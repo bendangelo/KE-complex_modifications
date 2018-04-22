@@ -9,7 +9,7 @@
                     "from": <%= from("fn", [], ["any"]) %>,
                     "to": <%= to([["fn"]]) %>,
                     "to_if_alone": [
-                        { "shell_command": "open '/Applications/iTerm.app'" }
+                        { "shell_command": "open '/Applications/Alacritty.app'" }
                     ]
                 },
                 {
@@ -52,12 +52,17 @@
                     "to": [
                         { "shell_command": "open '/Applications/Firefox.app'" }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "description": "Alt + spacebar open Alacritty",
+            "manipulators": [
                 {
                     "type": "basic",
-                    "from": <%= from("t", ["right_command"], ["caps_lock"]) %>,
+                    "from": <%= from("spacebar", ["left_option"], ["left_shift","right_shift", "caps_lock"]) %>,
                     "to": [
-                        { "shell_command": "open '/Applications/iTerm.app'" }
+                        { "shell_command": "open '/Applications/Alacritty.app'" }
                     ]
                 }
             ]
