@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "title": "Right Command Launch apps",
-=======
-  "title": "Right command Launch apps",
->>>>>>> Open alacritty with alt spacebar
   "rules": [
     {
       "description": "Launch apps by r_command+letters.",
