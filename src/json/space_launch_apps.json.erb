@@ -56,13 +56,25 @@
             ]
         },
         {
-            "description": "Alt + spacebar open Alacritty",
+            "description": "Left Alt (Option) + Spacebar open Alacritty",
             "manipulators": [
                 {
                     "type": "basic",
                     "from": <%= from("spacebar", ["left_option"], ["left_shift","right_shift", "caps_lock"]) %>,
                     "to": [
                         { "shell_command": "open '/Applications/Alacritty.app'" }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Left Alt (Option) + V open MacVim",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("v", ["left_option"], ["left_shift","right_shift", "caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/MacVim.app'" }
                     ]
                 }
             ]

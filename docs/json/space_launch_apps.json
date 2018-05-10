@@ -142,7 +142,7 @@
       ]
     },
     {
-      "description": "Alt + spacebar open Alacritty",
+      "description": "Left Alt (Option) + Spacebar open Alacritty",
       "manipulators": [
         {
           "type": "basic",
@@ -162,6 +162,32 @@
           "to": [
             {
               "shell_command": "open '/Applications/Alacritty.app'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Left Alt (Option) + V open MacVim",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "left_shift",
+                "right_shift",
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open '/Applications/MacVim.app'"
             }
           ]
         }
